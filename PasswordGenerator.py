@@ -43,5 +43,5 @@ all_lists.extend(symbols)
 all_choice = nr_letters + nr_numbers + nr_symbols
 for item in range(0, all_choice):
     pick = random.choice(all_lists)
-    password_hard += pick
+    password_hard += str(pick)
 print(f"Your hard password: {password_hard}")
